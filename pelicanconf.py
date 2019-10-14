@@ -2,6 +2,8 @@
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
 
+import subprocess
+
 AUTHOR = 'Jakub Stasiak'
 SITENAME = 'Jakub Stasiak'
 SITEURL = 'https://stasiak.at'
@@ -13,6 +15,7 @@ TIMEZONE = 'Europe/Warsaw'
 DEFAULT_LANG = 'en'
 
 THEME = 'stasiak.at-theme'
+COMMIT_ID = subprocess.check_output(['git', 'rev-parse', '--short', 'HEAD'], text=True).strip()
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
