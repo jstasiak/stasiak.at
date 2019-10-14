@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="{% block html_lang %}{{ DEFAULT_LANG }}{% endblock html_lang %}">
+<html lang="en">
+<head>
+  <title>{% block title %}{{ SITENAME }}{% endblock title %}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style type="text/css">
+  html,body,p,div,img,h1,h2,h3,h4,ol,dl,dd,dt,form,table,td,tr {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    border-collapse: separate;
+    border-spacing: 0;
+  }
+
+  html {
+      background-color: #242425;
+      color: #eeeeee;
+      font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+      line-height: 1.5;
+      padding-top: 1em;
+      padding-bottom: 1em;
+  }
+
+  p {
+      text-indent: 2em;
+  }
+
+  div {
+      padding: 0;
+      margin: 0;
+  }
+
+  body {
+      font-size: 100%;
+  }
+
+  a {
+      color: white;
+  }
+
+  a:hover {
+      text-decoration: none;
+  }
+
+  div#logo {
+      width: 100%;
+      text-align: center;
+  }
+
+  div#content {
+      width: 100%;
+  }
+
+  div#content div#innercontent {
+      max-width: 90ch;
+      margin: auto;
+      padding-left: 5%;
+      padding-right: 5%;
+  }
+
+  h1,h2 {
+      padding-top: 1em;
+  }
+
+  </style>
+</head>
+
+<body>
+  <div id="logo">
+    <h1>{{ SITENAME }}</h1>
+  </div>
+  <div id="content">
+    <div id="innercontent">
+      {% block content %}
+      {% endblock %}
+      <hr>
+      The content on this site is licensed under the <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/">Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0) license</a>.
+      Site generated (<a href="https://github.com/jstasiak/stasiak.at">source code</a>) using
+      <a href="https://github.com/getpelican/pelican">Pelican (a Python-powered static site generator)</a>.
+    </div>
+  </div>
+</body>
+</html>
