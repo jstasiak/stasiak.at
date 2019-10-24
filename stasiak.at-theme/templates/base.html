@@ -26,6 +26,10 @@
       text-indent: 2em;
   }
 
+  li p {
+    text-indent: 0em;
+  }
+
   div {
       padding: 0;
       margin: 0;
@@ -67,6 +71,11 @@
     font-size: 75%;
   }
 
+  nav {
+      width: 100%;
+      text-align: center;
+  }
+
   </style>
 </head>
 
@@ -74,6 +83,11 @@
   <div id="logo">
     <h1>{{ SITENAME }}</h1>
   </div>
+  <nav>
+    <a href="/pages/projects.html">Projects</a>
+    |
+    <a href="/pages/contact.html">Contact</a>
+  </nav>
   <div id="content">
     <div id="innercontent">
       {% block content %}
