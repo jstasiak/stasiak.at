@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>{% block title %}{{ SITENAME }}{% endblock title %}</title>
+  <title>{% block title %}{% endblock title %} [{{ SITENAME }}]</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta charset="utf-8">
   <style type="text/css">
@@ -72,12 +72,16 @@
       padding-top: 1em;
   }
 
-  footer {
+  header, footer {
     font-size: 75%;
   }
 
   hr.before-footer {
     margin-top: 2em;
+  }
+
+  header {
+    margin-bottom: 2em;
   }
 
   nav {
@@ -93,6 +97,8 @@
     <a href="/">{{ SITENAME }}</a>
   </div>
   <nav>
+    <a href="/">Posts</a>
+    |
     <a href="/pages/projects.html">Projects</a>
     |
     <a href="/pages/contact.html">Contact</a>
