@@ -32,3 +32,7 @@ STATIC_PATHS = ['jakub@stasiak.at.asc']
 
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
+
+MARKDOWN = {
+    'extensions': ['markdown.extensions.smarty'],
+}
