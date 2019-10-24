@@ -71,6 +71,10 @@
     font-size: 75%;
   }
 
+  hr.before-footer {
+    margin-top: 2em;
+  }
+
   nav {
       width: 100%;
       text-align: center;
@@ -92,7 +96,7 @@
     <div id="innercontent">
       {% block content %}
       {% endblock %}
-      <hr>
+      <hr class="before-footer">
       <footer>
         The content on this site is licensed under the <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/">CC BY-NC-ND 4.0 license</a>.
         Site generated from <a href="https://github.com/jstasiak/stasiak.at/commit/{{ COMMIT_ID }}">commit {{ COMMIT_ID }}</a> on <nobr>{{ TIMESTAMP }}</nobr> using
