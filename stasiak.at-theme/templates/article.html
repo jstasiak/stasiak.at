@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 {% block title %}{{ article.title }}{% endblock title %}
 {% block content %}
-<h2>{{ article.title }}</h2>
+<h1>{{ article.title }}</h1>
 <header>
   Published on <time datetime="{{ article.date.isoformat() }}">{{ article.date.date() }}</time>.
 </header>
