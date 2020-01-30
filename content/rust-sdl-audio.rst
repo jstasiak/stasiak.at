@@ -2,6 +2,7 @@ Updating SDL2 audio callback data in Rust
 #########################################
 
 :date: 2019-10-24 20:00
+:tags: rust, sdl2, rust-sdl2, audio
 
 Introduction
 ============

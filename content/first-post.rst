@@ -2,6 +2,7 @@ First post
 ##########
 
 :date: 2019-10-24 13:00
+:tags: meta
 
 Ok, this is meta. I'm using `Pelican <https://blog.getpelican.com>`_ for my site now and I want to publish
 some posts/articles – in order to do that I need a functioning article templates so that's what I'm

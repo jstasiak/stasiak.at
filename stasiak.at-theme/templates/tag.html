@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block title %}Posts tagged with {{ tag }}{% endblock title %}
+
+{% block content %}
+<h1>Posts tagged with {{ tag }}</h1>
+
+<ul>
+{% for article in articles_page.object_list %}
+    <li><a href="/{{ article.url }}">{{ article.title }}</a> ({{ article.date.date() }})</li>
+{% endfor %}
+</ul>
+
+{% endblock content %}

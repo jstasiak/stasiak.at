@@ -4,6 +4,12 @@
 <h1>{{ article.title }}</h1>
 <header>
   Published on <time datetime="{{ article.date.isoformat() }}">{{ article.date.date() }}</time>.
+  {% if article.tags %}
+    Tagged with
+    {% for tag in article.tags %}
+      <a href="/{{ tag.url }}">{{ tag }}</a>{% if not loop.last %},{% endif %}
+    {% endfor %}.
+  {% endif %}
 </header>
 
 {{ article.content }}
