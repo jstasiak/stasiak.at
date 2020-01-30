@@ -17,7 +17,7 @@ DEFAULT_LANG = 'en'
 
 THEME = 'stasiak.at-theme'
 COMMIT_ID = subprocess.check_output(['git', 'rev-parse', '--short=7', 'HEAD'], text=True).strip()
-TIMESTAMP = datetime.datetime.now().replace(microsecond=0).isoformat(' ')
+TIMESTAMP = datetime.datetime.now().replace(microsecond=0).astimezone().isoformat(' ')
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
