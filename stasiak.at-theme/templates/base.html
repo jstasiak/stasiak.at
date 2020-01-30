@@ -22,12 +22,12 @@
       padding-bottom: 1em;
   }
 
-  p {
+  /* Indenting only paragraphs that are preceeded by another paragraph, as indenting all
+     paragraphs may be too much (there's a lot of short paragraphs between code blocks,
+     indenting them doesn't look too nice).
+   */
+  p + p{
       text-indent: 2em;
-  }
-
-  li p {
-    text-indent: 0em;
   }
 
   div {
