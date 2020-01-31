@@ -264,7 +264,11 @@ Just the corners, zoomed-in for your convenience:
     :alt: Polanie main menu corners, zoomed-in
     :align: center
 
-Clear as day. Black lines on the right and at the bottom.
+Clear as day. Black lines on the right and at the bottom. And it's not just the
+main menu, of course. Almost all graphic assets, including backgrounds, menus etc.
+that are almost-screen-sized-but-not-quote, are stored in ``graf.dat`` and you
+can see the missing lines in almost all stages of the game (but intro videos are
+loaded from separate files, for example, and they have the right resolution).
 
 Now what?
 =========
