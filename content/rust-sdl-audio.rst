@@ -215,8 +215,8 @@ Execute ``cargo run`` and enjoy a beep being played.
 The problem
 ===========
 
-At some point naturaly want to modify the data the callback operates on to change the underlying buffer or
-update the position to, for example, play the same sound twice, with a thousand milisecond delay between
+At some point you'll want to modify the data the callback operates on to change the underlying buffer or
+update the position to, for example, play the same sound twice, with a thousand millisecond delay between
 its two playbacks. A naive approach to mutate the callback structure from two contexts will fail
 (not in the way you'd expect though, in this case – for backwards compatibility Rust 1.38 allows the code
 to compile, but it'll exhibit undefined behavior and won't work as expected):
