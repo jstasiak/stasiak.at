@@ -19,8 +19,10 @@ THEME = 'stasiak.at-theme'
 COMMIT_ID = subprocess.check_output(['git', 'rev-parse', '--short=7', 'HEAD'], text=True).strip()
 TIMESTAMP = datetime.datetime.now().replace(microsecond=0).astimezone().isoformat(' ')
 
-# Feed generation is usually not desired when developing
-FEED_ALL_ATOM = None
+FEED_DOMAIN = SITEURL
+FEED_ALL_ATOM = 'feeds/all.atom.xml'
+TAG_FEED_ATOM = 'feeds/{slug}.atom.xml'
+# Disabled Atom feeds, don't need them
 CATEGORY_FEED_ATOM = None
 TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None

@@ -107,6 +107,12 @@
 
   </style>
   <link rel="stylesheet" href="theme/pygments.css" type="text/css">
+  {% if FEED_ALL_ATOM %}
+    <link href="{{ FEED_DOMAIN }}/{{ FEED_ALL_ATOM }}" type="application/atom+xml" rel="alternate" title="{{ SITENAME }} Full Atom Feed" />
+  {% endif %}
+  {% if TAG_FEED_ATOM and tag %}
+  <link href="{{ FEED_DOMAIN }}/{{ TAG_FEED_ATOM.format(slug=tag.slug) }}" type="application/atom+xml" rel="alternate" title="{{ SITENAME }} {{ tag }} Atom Feed" />
+  {% endif %}
 </head>
 
 <body>
@@ -121,6 +127,10 @@
     <a href="/pages/projects.html">Projects</a>
     |
     <a href="/pages/contact.html">Contact</a>
+  {% if FEED_ALL_ATOM %}
+    |
+    <a href="/{% if FEED_ALL_ATOM_URL %}{{ FEED_ALL_ATOM_URL }}{% else %}{{ FEED_ALL_ATOM }}{% endif %}">Atom Feed</a>
+  {% endif %}
   </nav>
   <div id="content">
     <div id="innercontent">
