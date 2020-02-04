@@ -38,3 +38,9 @@ STATIC_PATHS = ['static']
 MARKDOWN = {
     'extensions': ['markdown.extensions.smarty'],
 }
+
+AUTHORS_SAVE_AS = ''
+AUTHOR_SAVE_AS = ''
+CATEGORIES_SAVE_AS = ''
+CATEGORY_SAVE_AS = ''
+ARCHIVES_SAVE_AS = ''
