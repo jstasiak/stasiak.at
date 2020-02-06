@@ -42,6 +42,8 @@ sister project, `Flask-Injector, which adds Injector support to Flask
   <https://christophergs.github.io/python/2018/09/25/elegant-flask-apis-pt-1/>`_
 * `Dependency Injection in Python: The Java Guy's Perspective by Preslav Rachev
   <https://preslav.me/2018/12/20/dependency-injection-in-python/>`_
+* `Type annotations in dependency injection by Antoni Piotr Oleksicki
+  <https://tech.webinterpret.com/type-annotations-in-dependecy-injection/>`_
 
 Now... In order to speculate about the future we need to talk about the past first.
 
