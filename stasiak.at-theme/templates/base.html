@@ -76,8 +76,8 @@
     font-size: 75%;
   }
 
-  hr.before-footer {
-    margin-top: 2em;
+  footer {
+      margin-top: 2em;
   }
 
   header {
@@ -228,7 +228,6 @@
     <div id="innercontent">
       {% block content %}
       {% endblock %}
-      <hr class="before-footer">
       <footer>
         Generated from <a href="https://github.com/jstasiak/stasiak.at/commit/{{ COMMIT_ID }}">commit {{ COMMIT_ID }}</a> on <nobr>{{ TIMESTAMP }}</nobr>.
         Content licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/">CC BY-NC-ND 4.0</a>.
