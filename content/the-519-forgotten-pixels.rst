@@ -2,7 +2,7 @@ The 519 forgotten pixels
 ########################
 
 :date: 2020-01-31 03:00
-:tags: openpol, polanie, trivia, digital preservation
+:tags: openpol, polanie, trivia, digital preservation, programming
 
 You've probably never played Polanie (AKA Osadnici, VICTORY or Slavs), a niche Polish real-time
 strategy game released in 1996.  But even if you have, I bet you haven't noticed this one tiny

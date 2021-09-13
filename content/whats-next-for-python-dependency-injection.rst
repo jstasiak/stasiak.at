@@ -2,7 +2,7 @@ What's next for Python dependency injection and Injector?
 #########################################################
 
 :date: 2020-02-03 17:30
-:tags: python, dependency injection, injector
+:tags: python, dependency injection, injector, programming
 
 Some stuff out of the way
 =========================
