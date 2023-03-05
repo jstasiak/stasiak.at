@@ -7,7 +7,7 @@ Programming projects
 * I programmed the UI, minigame, environment interaction and sound system in Insomnia, a university
   first person perspective horror game project. I also wrote music for the game. The project
   participated in a faculty-wide competition and received a discintion for its atmosphere. See
-  `Marcin Panasiuk's writeup <https://marcinpanasiuk.com/projects/insomnia/project.html>`_ for more
+  `Marcin Panasiuk's writeup <https://marcinpanasiuk.com/insomnia>`_ for more
   details.
 * I co-maintain some Open Source projects, of which the most notable are:
 
