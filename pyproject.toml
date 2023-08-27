@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "stasiak-at"
+version = "0.1.0"
+description = ""
+authors = ["Jakub Stasiak <jakub@stasiak.at>"]
+readme = "README.md"
+packages = [{include = "stasiak"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pelican = "^4.8.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
