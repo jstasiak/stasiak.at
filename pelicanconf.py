@@ -51,7 +51,7 @@ PLUGINS = [
     'sitemap',
 
     # My custom plugins
-    'header_permalinks',
+    'js_header_permalinks',
 ]
 
 SITEMAP = {
