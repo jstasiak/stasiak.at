@@ -3,10 +3,8 @@
 {% block content %}
 <h1>Posts</h1>
 
-<ul>
 {% for article in articles_page.object_list %}
-    <li><a href="{{ article.url }}">{{ article.title }}</a> ({{ article.date.date() }})</li>
+    {{ article.date.date() }} <a class="index" href="{{ article.url }}">{{ article.title }}</a><br>
 {% endfor %}
-</ul>
 
 {% endblock content %}
