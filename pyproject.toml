@@ -9,6 +9,7 @@ packages = [{include = "stasiak"}]
 [tool.poetry.dependencies]
 python = "^3.10"
 pelican = "^4.8.0"
+bs4 = "^0.0.1"
 
 
 [build-system]

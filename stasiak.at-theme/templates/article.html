@@ -15,3 +15,12 @@
 {{ article.content }}
 
 {% endblock content %}
+
+{% block sidebar %}
+  {% if article.toc %}
+    <div id="sidebar">
+      Contents:<br>
+      {{article.toc}}
+    </div>
+  {% endif %}
+{% endblock %}

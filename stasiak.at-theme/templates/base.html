@@ -79,14 +79,21 @@
   }
 
   div#content {
-      width: 100%;
+      margin: auto;
+      width: max-content;
+      display: flex;
   }
 
   div#content div#innercontent {
       max-width: 90ch;
-      margin: auto;
-      padding-left: 5%;
-      padding-right: 5%;
+  }
+
+  div#sidebar {
+    position: sticky;
+    top: 2em;
+    width: 200px;
+    height: 100%;
+    padding-left: 2em;
   }
 
   header, footer {
@@ -251,6 +258,8 @@
         Content licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/">CC BY-NC-ND 4.0</a>.
       </footer>
     </div>
+    {% block sidebar %}
+    {% endblock %}
   </div>
 </body>
 </html>
