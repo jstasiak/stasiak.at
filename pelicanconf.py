@@ -6,7 +6,7 @@ import datetime
 import subprocess
 
 AUTHOR = 'Jakub Stasiak'
-SITENAME = 'Jakub Stasiak'
+SITENAME = 'Jakub Stasiak\'s Website'
 SITEURL = 'https://stasiak.at'
 
 PATH = 'content'
