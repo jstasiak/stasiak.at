@@ -25,6 +25,12 @@
       line-height: 1.6;
       padding-top: 1em;
       padding-bottom: 1em;
+      /*
+      Necessary for text rendering in Firefox on macOS to match other browsers/systems.
+      It's significantly bolder otherwise, especially light-on-dark text, see
+      https://bugzilla.mozilla.org/show_bug.cgi?id=1625606 for details.
+      */
+      -moz-osx-font-smoothing: grayscale;
   }
 
   header, header a, nav, nav a, #logo a, footer, footer a {
