@@ -71,3 +71,8 @@ SITEMAP = {
 
 ARTICLE_URL = '{date:%Y}{date:%m}{date:%d}-{slug}.html'
 ARTICLE_SAVE_AS = '{date:%Y}{date:%m}{date:%d}-{slug}.html'
+
+# If set to True, several typographical improvements will be incorporated
+# into the generated HTML via the Typogrify library, which can be installed
+# via: pip install typogrify
+TYPOGRIFY = True

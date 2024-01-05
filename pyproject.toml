@@ -10,6 +10,7 @@ packages = [{include = "stasiak"}]
 python = "^3.10"
 pelican = "^4.8.0"
 bs4 = "^0.0.1"
+typogrify = "^2.0.7"
 
 
 [build-system]
