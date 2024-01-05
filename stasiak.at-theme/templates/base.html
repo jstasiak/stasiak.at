@@ -4,13 +4,126 @@
   <title>{% block title %}{% endblock title %}</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta charset="utf-8">
-  <style type="text/css">
+
+  <style>
+  /* source-sans-3-regular - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Source Sans 3';
+    font-style: normal;
+    font-weight: 400;
+    src: url('/static/fonts/source-sans-3-v15-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+
+  /* source-sans-3-italic - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Source Sans 3';
+    font-style: italic;
+    font-weight: 400;
+    src: url('/static/fonts/source-sans-3-v15-latin-italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+
+  /* source-sans-3-700 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Source Sans 3';
+    font-style: normal;
+    font-weight: 700;
+    src: url('/static/fonts/source-sans-3-v15-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+
+  /* source-sans-3-700italic - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Source Sans 3';
+    font-style: italic;
+    font-weight: 700;
+    src: url('/static/fonts/source-sans-3-v15-latin-700italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+
+  /* source-serif-4-regular - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Source Serif 4';
+    font-style: normal;
+    font-weight: 400;
+    src: url('/static/fonts/source-serif-4-v8-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+
+  /* source-serif-4-italic - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Source Serif 4';
+    font-style: italic;
+    font-weight: 400;
+    src: url('/static/fonts/source-serif-4-v8-latin-italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+
+  /* source-serif-4-700 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Source Serif 4';
+    font-style: normal;
+    font-weight: 700;
+    src: url('/static/fonts/source-serif-4-v8-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+
+  /* source-serif-4-700italic - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Source Serif 4';
+    font-style: italic;
+    font-weight: 700;
+    src: url('/static/fonts/source-serif-4-v8-latin-700italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+
+  /* source-code-pro-regular - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Source Code Pro';
+    font-style: normal;
+    font-weight: 400;
+    src: url('/static/fonts/source-code-pro-v23-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+
+  /* source-code-pro-italic - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Source Code Pro';
+    font-style: italic;
+    font-weight: 400;
+    src: url('/static/fonts/source-code-pro-v23-latin-italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+
+  /* source-code-pro-700 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Source Code Pro';
+    font-style: normal;
+    font-weight: 700;
+    src: url('/static/fonts/source-code-pro-v23-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+
+  /* source-code-pro-700italic - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Source Code Pro';
+    font-style: italic;
+    font-weight: 700;
+    src: url('/static/fonts/source-code-pro-v23-latin-700italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+
   html,body,p,div,img,h1,h2,h3,h4,ol,dl,dd,dt,form,table,td,tr {
     margin: 0;
     padding: 0;
     border: 0;
     border-collapse: separate;
     border-spacing: 0;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Source Sans 3';
   }
 
   h2 {
@@ -21,7 +134,7 @@
   html {
       background-color: #04041A;
       color: #eeeeee;
-      font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+      font-family: 'Source Serif 4', serif;
       line-height: 1.6;
       padding-top: 1em;
       padding-bottom: 1em;
@@ -98,6 +211,11 @@
     width: 200px;
     height: 100%;
     padding-left: 2em;
+    font-family: 'Source Sans 3';
+  }
+
+  div#sidebar a {
+    font-family: 'Source Serif 4';
   }
 
   header, footer {
@@ -140,14 +258,16 @@
 
   tt {
     background-color: #272822;
-    font-family: monospace;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 0.8em;
     color: #a6e22e;
     border-radius: 0.5em;
     padding: 0.25em;
   }
 
   pre {
-    font-family: monospace;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 0.8em;
   }
 
   .highlight {
