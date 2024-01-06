@@ -8,10 +8,13 @@
 :tags:
    rust, lune, programming
 
-(This post was originally published on `Lune Blog
-<https://lune.co/post/i-used-rust-as-a-non-obvious-data-exploration-tool-and-it-was-great>`_.
-`Lune <https://lune.co>`_, where I help fighting the climate crisis, kindly allowed
-me to republish it here.)
+..
+
+   This post was originally published on `Lune Blog
+   <https://lune.co/post/i-used-rust-as-a-non-obvious-data-exploration-tool-and-it-was-great>`_.
+
+   `Lune <https://lune.co>`_, where I help fighting the climate crisis, kindly allowed
+   me to republish it here.
 
 **************
  How it began

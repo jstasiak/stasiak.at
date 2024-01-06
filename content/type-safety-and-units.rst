@@ -4,12 +4,15 @@ Type safety, units and how (not) to crash the Mars Climate Orbiter
 :date: 2021-09-03 01:00
 :tags: programming, typescript, type safety, units, lune
 
+..
+
+    This text was originally published on `Lune Blog <https://lune.co/post/type-safety-units-and-how-not-to-crash-the-mars-climate-orbiter>`_.
+
+    `Lune <https://lune.co>`_, where I help fighting the climate crisis, kindly allowed me to republish it here.
+
 
 Introduction
 ============
-
-(This text was originally published on `Lune Blog <https://lune.co/post/type-safety-units-and-how-not-to-crash-the-mars-climate-orbiter>`_.
-`Lune <https://lune.co>`_, where I help fighting the climate crisis, kindly allowed me to republish it here.)
 
 In this post I'll show how to handle units in a TypeScript codebase in a type-safe manner.
 

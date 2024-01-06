@@ -8,10 +8,13 @@
 :tags:
    ansible, devops, lune, unix, python, optimization
 
-(This post was originally published on `Lune Blog
-<https://lune.co/post/optimizing-rendering-of-ansible-templates-with-vault-secrets-the-unix-way>`_.
-`Lune <https://lune.co>`_, where I help fighting the climate crisis, kindly allowed
-me to republish it here.)
+..
+
+  This post was originally published on `Lune Blog
+  <https://lune.co/post/optimizing-rendering-of-ansible-templates-with-vault-secrets-the-unix-way>`_.
+
+  `Lune <https://lune.co>`_, where I help fighting the climate crisis, kindly allowed
+  me to republish it here.
 
 
 ***************
