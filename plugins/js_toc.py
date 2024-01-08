@@ -22,7 +22,7 @@ def insert_toc(content):
         entries.append(f'<a href="{href}">{label}</a>')
 
     if entries:
-        rendered_toc = '<br>\n'.join(entries)
+        rendered_toc = '\n'.join(entries)
         content.toc = rendered_toc
 
 def register() -> None:
