@@ -1,6 +1,9 @@
 PY?=python3
 PELICAN?=pelican
-PELICANOPTS=
+# Workaround for a Pelican 4.10.0 issue, see https://github.com/getpelican/pelican/issues/3394
+# AttributeError: 'NoneType' object has no attribute 'terminate'
+# TypeError: cannot pickle '_thread.RLock' object
+PELICANOPTS=--log-handler plain
 
 BASEDIR=$(CURDIR)
 INPUTDIR=$(BASEDIR)/content
