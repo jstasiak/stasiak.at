@@ -1,18 +1,10 @@
-[tool.poetry]
+[project]
 name = "stasiak-at"
 version = "0.1.0"
-description = ""
-authors = ["Jakub Stasiak <jakub@stasiak.at>"]
-readme = "README.md"
-packages = [{include = "stasiak"}]
-
-[tool.poetry.dependencies]
-python = "^3.10"
-pelican = "^4.8.0"
-bs4 = "^0.0.1"
-typogrify = "^2.0.7"
-
-
-[build-system]
-requires = ["poetry-core"]
-build-backend = "poetry.core.masonry.api"
+description = "Add your description here"
+requires-python = ">=3.10"
+dependencies = [
+    "bs4>=0.0.2",
+    "pelican>=4.10.0",
+    "typogrify>=2.0.7",
+]
