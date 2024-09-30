@@ -221,6 +221,10 @@
     margin: 0.5em 0;
   }
 
+  div#sidebar a.active {
+    color: #a6e22e;
+  }
+
   header, footer {
     font-size: 75%;
   }
@@ -358,6 +362,37 @@
   <link href="{{ FEED_DOMAIN }}/{{ TAG_FEED_ATOM.format(slug=tag.slug) }}" type="application/atom+xml" rel="alternate" title="{{ SITENAME }} {{ tag }} Atom Feed" />
   {% endif %}
   <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml">
+
+  <script>
+    function onLoad() {
+      let previous = null
+
+      function handler(entries) {
+        const intersecting = entries.filter(({isIntersecting}) => isIntersecting)
+        if (intersecting.length === 0) {
+          return
+        }
+        // Just picking the first item for now, we can get fancier in the future if needed
+        const topPick = intersecting[0].target.attributes.href.value
+        if (previous === topPick) {
+          return
+        }
+        if (previous !== null) {
+          console.log(`queryselecting ${previous}`)
+          document.querySelector(`div#sidebar a[href="${previous}"]`).classList.remove('active')
+        }
+        console.log(`queryselecting ${topPick}`)
+        document.querySelector(`div#sidebar a[href="${topPick}"]`).classList.add('active')
+        previous = topPick
+      }
+
+      const observer = new IntersectionObserver(handler)
+      for (const element of document.querySelectorAll('a.header')) {
+        observer.observe(element)
+      }
+    }
+    window.addEventListener('DOMContentLoaded', onLoad)
+  </script>
 </head>
 
 <body>
