@@ -45,9 +45,8 @@ CATEGORIES_SAVE_AS = ''
 CATEGORY_SAVE_AS = ''
 ARCHIVES_SAVE_AS = ''
 
-PLUGIN_PATHS = ['./pelican-plugins', './plugins']
+PLUGIN_PATHS = ['./plugins']
 PLUGINS = [
-    # From pelican-plugins
     'sitemap',
 
     # My custom plugins
