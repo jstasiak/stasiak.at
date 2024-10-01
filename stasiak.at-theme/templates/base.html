@@ -378,10 +378,8 @@
           return
         }
         if (previous !== null) {
-          console.log(`queryselecting ${previous}`)
           document.querySelector(`div#sidebar a[href="${previous}"]`).classList.remove('active')
         }
-        console.log(`queryselecting ${topPick}`)
         document.querySelector(`div#sidebar a[href="${topPick}"]`).classList.add('active')
         previous = topPick
       }
