@@ -24,5 +24,5 @@ Prerequisites:
 ### How to run the blog locally
 
 ```
-uv sync && uv run pelican -lr
+uv sync && uv run invoke livereload
 ```

@@ -8,4 +8,6 @@ dependencies = [
     "pelican-sitemap>=1.1.0",
     "pelican>=4.10.0",
     "typogrify>=2.0.7",
+    "invoke>=2.2.0",
+    "livereload>=2.7.1",
 ]
