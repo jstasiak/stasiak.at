@@ -11,3 +11,18 @@ documented in the appropriate places if so.
 The site uses [Pelican Static Site Generator](https://blog.getpelican.com/)
 written in [Python](https://www.python.org/).
 Syntax in code blocks is lighlighted using [Pygments](https://pygments.org/).
+
+## Common tasks
+
+Becuase I'm forgetful.
+
+Prerequisites:
+
+* Python (duh)
+* [uv](https://docs.astral.sh/uv/)
+
+### How to run the blog locally
+
+```
+uv sync && uv run pelican -lr
+```
