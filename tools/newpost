@@ -1,0 +1,47 @@
+#!/usr/bin/env python3
+
+import datetime
+import os
+import re
+import sys
+
+def slugify(title: str) -> str:
+    return re.sub(r'[^a-z0-9]+', '-', title.lower())
+
+
+def main() -> None:
+    args = sys.argv[1:]
+    if len(args) == 1:
+        (title,) = args
+        slug = slugify(title)
+    elif len(args) == 2:
+        (title, slug) = args
+    else:
+        print('Usage: newpost <the post title> [<slug>]')
+        exit(1)
+
+    post_path = os.path.join('content', f'{slug}.rst')
+    if os.path.exists(post_path):
+        print(f'{post_path} already exists')
+        exit(1)
+
+    text = f'''{title}
+{'#' * len(title)}
+
+:date: {datetime.date.today()}
+:slug: {slug}
+:tags: <TAGS HERE>
+
+<CONTENT HERE>
+
+'''
+
+    with open(post_path, 'w') as f:
+        f.write(text)
+
+    editor = os.environ.get('EDITOR', 'vi')
+    os.execvp(editor, [editor, post_path])
+
+
+if __name__ == '__main__':
+    main()
