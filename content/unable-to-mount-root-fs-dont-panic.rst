@@ -3,7 +3,7 @@ Unable to mount root fs? Don't panic
 
 :date: 2025-02-17
 :slug: unable-to-mount-root-fs-dont-panic
-:tags: linux
+:tags: linux, initramfs, dracut
 
 If you're like me you hate it when a server doesn't come back up after a reboot.
 
