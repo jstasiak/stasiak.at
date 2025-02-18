@@ -68,5 +68,8 @@ or use the ``--regenerate-all`` option::
 
     dracut --regenerate-all
 
-Best to make this mistake when the server is in the other room or count on your
-out-of-band management solution to work.
+Keep that in mind, learn from my mistakes.
+
+Also: a working out-of-band management solution is a blessing in situations like this
+one, if I wasn't next door to the server I'd be able to rescue it thru iLO, however
+begrudgingly.
