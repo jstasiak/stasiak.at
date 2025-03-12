@@ -6,8 +6,14 @@ My usual strace options
 :tags: debugging, linux
 
 `strace <https://en.wikipedia.org/wiki/Strace>`_ is a useful diagnostic tool that I reach
-for from time to time when Things Go Wrong. Yes, there is `eBPF <https://en.wikipedia.org/wiki/EBPF>`__
-and such but good ol' strace is still very much alive.
+for from time to time when Things Go Wrong. As the Wikipedia page describes it:
+
+    It is used to monitor and tamper with interactions between processes and the Linux
+    kernel, which include system calls, signal deliveries, and changes of process state.
+
+Yes, we have access to `eBPF <https://en.wikipedia.org/wiki/EBPF>`_-based tools these
+days, which are better in many ways, but this post isn't about that and good ol' strace
+is still very much alive.
 
 The thing with ``strace`` is it accepts a lot of command-line options and I never quite
 remember all of them so this list is a much for me as it is for anyone else:
