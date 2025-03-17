@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+set -euo pipefail
+git co drafts
+vim notes
+git add notes
+git commit -m "Update notes"
+git co master
