@@ -62,7 +62,7 @@ At Lune there are a lot of units used for various things:
 * Kilowatt-hours, megawatt-hours and gigawatt-hours for describing the amount of electric energy used
 * Grams/kilograms/tonnes of CO2 for purely carbon dioxide emissions and CO2e (CO2 Equivalent – this
   unit accounts for both carbon and non-carbon emissions, like methane)
-  
+
 There are also various derivative units coming from external datasets:
 
 * ``kgCO2e/t*km``
