@@ -10,8 +10,8 @@
 
 ..
 
-    This text was originally published on `Lune Blog
-    <https://lune.co/blog/sea-is-not-land-or-more-typescript-type-safety-fun/>`_ on 2022-06-30.
+    This text was originally published on `Lune Engineering Blog
+    <https://eng.lune.co/posts/2022/06/30/sea-is-not-land-or-more-typescript-type-safety-fun/>`_ on 2022-06-30.
 
     `Lune <https://lune.co>`_, where I help fighting the climate crisis, kindly allowed me
     to republish it here.

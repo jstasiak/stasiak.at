@@ -6,7 +6,7 @@ Type safety, units and how (not) to crash the Mars Climate Orbiter
 
 ..
 
-    This text was originally published on `Lune Blog <https://lune.co/post/type-safety-units-and-how-not-to-crash-the-mars-climate-orbiter>`_.
+    This text was originally published on `Lune Engineering Blog <https://eng.lune.co/posts/2021/09/03/type-safety-units/>`_.
 
     `Lune <https://lune.co>`_, where I help fighting the climate crisis, kindly allowed me to republish it here.
 

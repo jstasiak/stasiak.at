@@ -10,8 +10,8 @@
 
 ..
 
-  This post was originally published on `Lune Blog
-  <https://lune.co/post/optimizing-rendering-of-ansible-templates-with-vault-secrets-the-unix-way>`_.
+  This post was originally published on `Lune Engineering Blog
+  <https://eng.lune.co/posts/2021/11/26/optimizing-ansible-templates-the-unix-way/>`_.
 
   `Lune <https://lune.co>`_, where I help fighting the climate crisis, kindly allowed
   me to republish it here.
